@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "weather": {
+            "command": "node",
+            "args": [
+                "/path/to/mcpserver-weather/build/index.js"
+            ]
+        },
+        "mssql": {
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "/path/to/mcpserver-mssql.csproj"
+            ]
+        }
+    }
+}

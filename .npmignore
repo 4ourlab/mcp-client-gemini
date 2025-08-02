@@ -1,0 +1,54 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.git/
+.gitignore
+node_modules/
+
+# Development scripts and configs
+.vscode/
+.idea/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+tests/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Documentation source
+docs/
+
+# CI/CD files
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+
+# Source examples (duplicates)
+examples/
+
+# Explicitly include build/examples
+!build/examples/ 

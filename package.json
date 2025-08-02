@@ -1,0 +1,37 @@
+{
+    "name": "@4ourlab/mcp-client-gemini",
+    "version": "1.0.5",
+    "description": "MCP (Model Context Protocol) implementation for Gemini models",
+    "main": "build/src/index.js",
+    "types": "build/src/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./build/src/index.js",
+            "require": "./build/src/index.js"
+        },
+        "./examples/*": "./build/examples/*"
+    },
+    "scripts": {
+        "build": "tsc && cp -r examples build/ && node -e \"require('fs').chmodSync('build/src/index.js', '755')\"",
+        "dev": "tsc --watch"
+    },
+    "keywords": ["mcp", "model-context-protocol", "gemini", "ai", "google-generative-ai", "typescript", "nodejs"],
+    "author": "Billston",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/4ourlab/mcp-client-gemini"
+    },
+    "homepage": "https://github.com/4ourlab/mcp-client-gemini",
+    "bugs": {
+        "url": "https://github.com/4ourlab/mcp-client-gemini/issues"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.21.0",
+        "@modelcontextprotocol/sdk": "^1.17.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.16.5",
+        "typescript": "^5.8.3"
+    }
+}
