@@ -81,7 +81,7 @@ export class MCPClient {
             args: serverConfig.args,
         });
 
-        const client = new Client({ name: packageJson.name, version: packageJson.version });
+        const client = new Client({ name: "mcp-client-" + serverName, version: packageJson.version });
         client.connect(transport);
 
         // List available tools for this server
